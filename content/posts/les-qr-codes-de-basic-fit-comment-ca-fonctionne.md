@@ -1,7 +1,7 @@
 ---
 title: "Les QR Codes de Basic Fit : Comment ça fonctionne ?"
 description: Comment ça marche ces QR Codes qu’on scanne à l’entrée des salles Basic Fit ? C’est la question que je me suis posé. Dans ce post, on va parler QR Codes, appli mobile, un peu de tech, et de reverse engineering.
-pubDate: 01-10-2025
+pubDate: 01/10/2025
 image: /blog-img/les-qr-codes-de-basic-fit-comment-ca-fonctionne/header.webp
 tags: ["reverse engineering", "salle de sport", "qr code"]
 slug: les-qr-codes-de-basic-fit-comment-ca-fonctionne
