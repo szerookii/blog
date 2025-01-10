@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Minecraft";
+  src:
+    url("/fonts/Minecraft.woff2") format("woff2"),
+    url("/fonts/Minecraft.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  cursor: url("/cursor/default.png"), auto !important;
+}
+
+a,
+button,
+input[type="button"],
+input[type="submit"],
+label {
+  cursor: url("/cursor/pointer.png"), pointer !important;
+}
