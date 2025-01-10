@@ -13,6 +13,7 @@ import LatestTitle from '@/components/latest_title.vue';
 const posts = await queryContent('posts').sort({ pubDate: -1 }).find();
 
 useSeoMeta({
+  colorScheme: '#c084fc',
   title: 'Blog de Mathis',
   description: 'Bienvenue sur mon blog! Ici je parle de tout ce qui me passionne, de la programmation au reverse engineering en passant par le hacking éthique.',
   creator: 'szeroki',
@@ -24,7 +25,6 @@ useSeoMeta({
   ogUrl: 'https://blog.szeroki.fr',
   ogImage: 'https://blog.szeroki.fr/og-image.png',
   ogImageAlt: 'Blog de Mathis',
-  ogSiteName: 'Blog de Mathis',
 
   // Twitter
   twitterTitle: 'Blog de Mathis',

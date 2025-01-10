@@ -40,6 +40,7 @@ const post = await queryContent('posts').where({
 }).findOne();
 
 useSeoMeta({
+  colorScheme: "#c084fc",
   title: post.title,
   description: post.description,
 
