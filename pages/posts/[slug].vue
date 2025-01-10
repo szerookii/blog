@@ -1,7 +1,7 @@
 <template>
   <div class="max-w-4xl mx-auto px-8 pb-12">
     <header class="mb-8 space-y-3 mt-12">
-      <p class="text-gray-600">{{ Intl.DateTimeFormat('fr-FR', { dateStyle: 'full' }).format(new Date(post.pubDate)) }}
+      <p class="text-gray-600">{{ Intl.DateTimeFormat('fr-FR', { dateStyle: 'full' }).format(post.pubDate) }}
         &bull; {{ post.readingTime }} minute{{ post.readingTime > 1 ? "s" : "" }} de lecture</p>
       <h1 class="text-4xl font-bold mb-2">{{ post.title }}</h1>
       <p class="text-gray-600 space-y-1">Tags: <span v-for="tag in post.tags" :key="tag"
