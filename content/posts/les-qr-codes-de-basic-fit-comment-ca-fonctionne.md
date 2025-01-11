@@ -62,7 +62,7 @@ En analysant le bytecode généré par Hermes, on y découvre plusieurs choses i
 
 Le deviceId semble être la clé manquante pour comprendre la génération du hash. Si celui-ci est essentiel pour valider le QR Code, il est difficile d’en savoir plus en l’absence de détails explicites dans le bytecode.
 
-Cependant, après avoir analysé plus en profondeur, le processus de génération du hash SHA256 devient plus clair : pour généré le hash, l'application fait un hash SHA256 de la concaténation des informations suivantes : `V00347833:2L8:1720878864:deviceId` puis renvoies les 8 derniers caractères du hash.
+Cependant, après avoir analysé plus en profondeur, le processus de génération du hash devient plus clair : pour généré le hash, l'application fait un hash SHA256 de la concaténation des informations suivantes : `V00347833:2L8:1720878864:deviceId` puis renvoies les 8 derniers caractères du hash.
 
 ### Pourquoi c’est important :
 
