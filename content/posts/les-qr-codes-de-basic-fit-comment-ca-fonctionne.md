@@ -12,7 +12,7 @@ published: true
 
 Comment ça marche ces QR Codes qu’on scanne à l’entrée des salles Basic Fit ? C’est la question que je me suis posé y a pas si longtemps en passant le tourniquet de Basic Fit. Donc, j'ai décidé de me pencher sur le sujet et de voir comment ça fonctionne.
 
-⚠️ Ce post nous vous apprendra pas comment frauder votre abonnement Basic Fit. C'est juste une analyse technique pour comprendre comment fonctionne le système de QR Code de Basic Fit, rien de plus. ⚠️
+⚠️ Ce post ne vous apprendra pas comment frauder votre abonnement Basic Fit. C'est juste une analyse technique pour comprendre comment fonctionne le système de QR Code de Basic Fit, rien de plus. ⚠️
 
 # 1. Une analyse initiale : ce que révèle un simple scan
 
