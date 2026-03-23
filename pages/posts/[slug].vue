@@ -1,16 +1,16 @@
 <template>
-  <div class="max-w-4xl mx-auto px-8 pb-12">
+  <div class="max-w-4xl mx-auto px-8 pb-12 font-poppins">
     <header class="mb-8 space-y-3 mt-12">
-      <p class="text-gray-600">{{ dayjs(post.pubDate).format('DD MMMM YYYY') }}
+      <p class="text-gray-600 font-minecraft">{{ dayjs(post.pubDate).format('DD MMMM YYYY') }}
         &bull; {{ post.readingTime }} minute{{ post.readingTime > 1 ? "s" : "" }} de lecture</p>
-      <h1 class="text-4xl font-bold mb-2">{{ post.title }}</h1>
-      <p class="text-gray-600 space-y-1">Tags: <span v-for="tag in post.tags" :key="tag"
+      <h1 class="text-4xl font-bold mb-2 font-minecraft">{{ post.title }}</h1>
+      <p class="text-gray-600 space-y-1 font-minecraft">Tags: <span v-for="tag in post.tags" :key="tag"
           class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-white bg-purple-400 mr-2">{{
           tag }}</span></p>
       <img :src="post.image" alt="Post image" class="w-full h-auto object-contain mt-4 rounded-lg" />
     </header>
 
-    <article class="prose prose-code:!bg-background prose-pre:!p-0 max-w-full prose-hr:border-gray-600 prose-li:marker:text-black font-mono">
+    <article class="prose prose-strong:text-purple-600 prose-code:bg-yellow-300 prose-code:text-purple-600 prose-code:border prose-code:border-purple-600 prose-code:rounded prose-code:px-1 [&_pre_code]:!bg-transparent [&_pre_code]:!text-inherit [&_pre_code]:!rounded-none [&_pre_code]:!px-0 [&_pre_code]:!border-0 prose-code:before:content-none prose-code:after:content-none prose-pre:!px-4 prose-pre:!py-3 prose-pre:!bg-[#1a1b26] max-w-full prose-hr:border-gray-600 prose-li:marker:text-black font-poppins text-lg leading-relaxed">
       <ContentRendererMarkdown :value="post">
         <template #empty>
           <p>Aucun contenu pour cet article.</p>
@@ -27,6 +27,9 @@ dayjs.locale('fr'); // TODO: move this to a global setup
 
 import hljs from 'highlight.js/lib/core';
 import javascript from 'highlight.js/lib/languages/javascript';
+import cpp from 'highlight.js/lib/languages/cpp';
+import c from 'highlight.js/lib/languages/c';
+import armasm from 'highlight.js/lib/languages/armasm';
 import json from 'highlight.js/lib/languages/json';
 import "highlight.js/styles/tokyo-night-dark.min.css";
 
@@ -102,11 +105,15 @@ useJsonld(() => ({
     '@type': 'ReadAction',
     target: `https://blog.szeroki.fr/posts/${post.slug}`,
   },
-}));  
+}));
 
 onMounted(() => {
   hljs.registerLanguage('javascript', javascript);
   hljs.registerLanguage('json', json);
+  hljs.registerLanguage('cpp', cpp);
+  hljs.registerLanguage('c', c);
+  hljs.registerLanguage('asm', armasm);
+
   hljs.highlightAll();
 });
 </script>

@@ -12,6 +12,7 @@ export default {
     extend: {
       fontFamily: {
         minecraft: ["Minecraft", "sans-serif"],
+        poppins: ["Poppins", "sans-serif"],
       },
       boxShadow: {
         "pixel-art": "-3px 0 0 0, 3px 0 0 0, 0 -3px 0 0, 0 3px 0 0",

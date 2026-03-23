@@ -15,6 +15,7 @@ export default defineNuxtConfig({
   ],
   content: {
     documentDriven: true,
+    highlight: false,
   },
   compatibilityDate: '2024-11-01',
   nitro: {
