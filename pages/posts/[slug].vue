@@ -1,6 +1,12 @@
 <template>
-  <div class="max-w-4xl mx-auto px-8 pb-12 font-poppins">
-    <header class="mb-8 space-y-3 mt-12">
+  <div v-if="post" class="max-w-4xl mx-auto px-8 pb-12 font-poppins">
+    <div class="mt-8 mb-4">
+      <NuxtLink to="/" class="inline-flex items-center gap-2 text-purple-600 hover:text-purple-800 transition-colors font-minecraft">
+        <LucideArrowLeft :size="18" />
+        Retour à l'accueil
+      </NuxtLink>
+    </div>
+    <header class="mb-8 space-y-3 mt-4">
       <p class="text-gray-600 font-minecraft">{{ dayjs(post.pubDate).format('DD MMMM YYYY') }}
         &bull; {{ post.readingTime }} minute{{ post.readingTime > 1 ? "s" : "" }} de lecture</p>
       <h1 class="text-4xl font-bold mb-2 font-minecraft">{{ post.title }}</h1>
