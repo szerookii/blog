@@ -1,7 +1,7 @@
 ---
 title: "Les Nanomites d'Armadillo : L'anti-debug poussé à l'extrême"
 description: "Plongée dans les entrailles d'Armadillo et de ses fameuses 'nanomites'. Comment une technique d'obfuscation logicielle a donné des sueurs froides aux reverse engineers pendant des années."
-pubDate: 04/05/2026
+pubDate: 04/04/2026
 image: /blog-img/les-nanomites-d-armadillo/header.png
 tags: ["reverse engineering", "obfuscation", "anti-debug", "assembly"]
 slug: les-nanomites-d-armadillo
